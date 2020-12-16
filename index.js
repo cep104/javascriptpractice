@@ -78,3 +78,5 @@ console.log(jonas)
 //"Jonas has three friends, and his best friend is called Michael"
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
+
+
