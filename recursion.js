@@ -11,15 +11,15 @@
 //     //keeps going and going and going till base case is met.
 // }
 
-function factorial(n) {
-  if ((n == 1) | (n == 0)) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
-}
+// function factorial(n) {
+//   if ((n == 1) | (n == 0)) {
+//     return 1;
+//   } else {
+//     return n * factorial(n - 1);
+//   }
+// }
 
-console.log(factorial(4));
+// console.log(factorial(4));
 //the solution gets bubbled up
 // 4 * factorial(3)
 // 3 * factorial(2)
@@ -28,13 +28,16 @@ console.log(factorial(4));
 // 4 * factorial(3) = 24 (6 gets bubbled up and is the answer to factorial(3) so 4 * 6 = 24 so factorial(4) = 24)
 // 3 * factorial(2) = 6 (2 gets bubbled up and is the answer for factorial(2) so 3 * 2 = 6)
 // 2 * factorial(1) = 2 (factorial(1) hits the base case so returns 1)
-function getGift(present) {
-  if (!Array.isArray(present)) {
-    return console.log("Finally my Present!");
-  } else {
-    getGift(present);
-    return console.log("go again!");
-  }
-}
+
 newArray = [[[["present"]]]];
+
+function getGift(present) {
+  if (present === ["present"]) {
+    return console.log("Finally my Present!");
+  }
+
+  let smallerPresent = present.flat();
+  getGift(smallerPresent.flat());
+}
+
 getGift(newArray);
