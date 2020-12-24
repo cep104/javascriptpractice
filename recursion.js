@@ -29,9 +29,12 @@ console.log(factorial(4));
 // 3 * factorial(2) = 6 (2 gets bubbled up and is the answer for factorial(2) so 3 * 2 = 6)
 // 2 * factorial(1) = 2 (factorial(1) hits the base case so returns 1)
 function getGift(present) {
-  if (present.getClass() === "string") {
-    return "Finally my Present!";
+  if (!Array.isArray(present)) {
+    return console.log("Finally my Present!");
+  } else {
+    getGift(present);
+    return console.log("go again!");
   }
 }
 newArray = [[[["present"]]]];
-console.log(getGift(newArray));
+getGift(newArray);
