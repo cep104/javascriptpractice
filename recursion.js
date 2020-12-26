@@ -31,13 +31,25 @@
 
 newArray = [[[["present"]]]];
 
-function getGift(present) {
-  if (present === ["present"]) {
-    return console.log("Finally my Present!");
-  }
+// function getGift(present) {
+//   if (!Array.isArray(present)) {
+//     return console.log("Finally my Present!");
+//   }
+//   let smallerPresent = present.flat();
+//   console.log(smallerPresent);
+//   getGift(smallerPresent);
+// }
 
-  let smallerPresent = present.flat();
-  getGift(smallerPresent.flat());
+// getGift(newArray);
+
+function flat(array) {
+  console.log("haha still not the present");
+  //   console.log(array);
+  return array.reduce((acc, item) => {
+    return acc.concat(
+      Array.isArray(item) ? flat(item) : console.log("this is my gift")
+    );
+  }, []);
 }
 
-getGift(newArray);
+flat(newArray);
