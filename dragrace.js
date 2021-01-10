@@ -36,4 +36,18 @@ const winners = {
   },
 };
 
-console.log(winners["Raja"]["name"]);
+// console.log(winners["Raja"]["name"]);
+// let a = 2;
+// let answer = function (a) {
+//   console.log(a);
+//   let base = 3;
+//   return [
+//     function () {
+//       return base + a;
+//     },
+//     function () {
+//       return base;
+//     },
+//   ];
+// };
+// console.log(answer(a)[0]());
