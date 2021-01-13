@@ -1,5 +1,5 @@
 const winners = {
-  BebeZaharaBenet: {
+  bebeZaharaBenet: {
     name: "Bebe Zahara Benet",
     seasonWon: "S1",
     memorableQuotes: [
@@ -7,32 +7,35 @@ const winners = {
       "Rrrrra-ka-ta-ti-ti-ta-ta",
     ],
     wins: {
-      MaxiChallengeWins: 2,
-      MiniChallengeWins: 0,
-      TimesInTop: 1,
+      maxiChallengeWins: 2,
+      miniChallengeWins: 0,
+      timesInTop: 1,
     },
-    Losses: {
-      TimesPlacedLow: 0,
-      TimesInBottom: 1,
+    losses: {
+      timesPlacedLow: 0,
+      timesInBottom: 1,
     },
   },
-  TyraSanchez: {
+  tyraSanchez: {
     name: "Tyra Sanchez",
     seasonWon: "S2",
-    MaxiChallengeWins: 3,
-    MiniChallengeWins: 1,
-    TimesInTop: 4,
-    TimesPlacedLow: 1,
-    TimesInBottom: 0,
+    maxiChallengeWins: 3,
+    miniChallengeWins: 1,
+    timesInTop: 4,
+    timesPlacedLow: 1,
+    timesInBottom: 0,
   },
-  Raja: {
+  rajaGemini: {
     name: "Raja",
     seasonWon: "S3",
-    MaxiChallengeWins: 3,
-    MiniChallengeWins: 2,
-    TimesInTop: 4,
-    TimesPlacedLow: 1,
-    TimesInBottom: 1,
+    maxiChallengeWins: 3,
+    miniChallengeWins: 2,
+    timesInTop: 4,
+    timesPlacedLow: 1,
+    timesInBottom: 1,
+  },
+  sharonNeedles: {
+    name: "Sharon Needles",
   },
 };
 
