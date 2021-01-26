@@ -75,6 +75,54 @@ const winners = {
       timesInBottom: 1,
     },
   },
+  biancaDelRio: {
+    name: "Bianca Del Rio",
+    seasonWon: "S6",
+    memorableQuotes: ["Not today Satan! Not today!", "I'm clown realness!"],
+    wins: {
+      maxiChallengeWins: 3,
+      miniChallengeWins: 1,
+      timesInTop: 5,
+    },
+    losses: {
+      timesPlacedLow: 0,
+      timesInBottom: 0,
+    },
+  },
+  violetChachki: {
+    name: "Violet Chachki",
+    seasonWon: "S7",
+    memorableQuotes: [
+      "Ooh la la la la-la-la-la la.",
+      "I am a one-of-a-kind collectible.",
+    ],
+    wins: {
+      maxiChallengeWins: 3,
+      miniChallengeWins: 1,
+      timesInTop: 2,
+    },
+    losses: {
+      timesPlacedLow: 2,
+      timesInBottom: 0,
+    },
+  },
+  bobTheDragQueen: {
+    name: "Bob the Drag Queen",
+    seasonWon: "S8",
+    memorableQuotes: [
+      "Purse first! Purse first! Walk into the room purse first! Clack!",
+      "If my intentions were to hurt you, you'd be crying right now, bitch! (to Derrick Barry)",
+    ],
+    wins: {
+      maxiChallengeWins: 3,
+      miniChallengeWins: 1,
+      timesInTop: 0,
+    },
+    losses: {
+      timesPlacedLow: 0,
+      timesInBottom: 1,
+    },
+  },
 };
 
 const youreAWinnerBaby = (winners) => {
