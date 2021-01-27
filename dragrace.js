@@ -123,6 +123,37 @@ const winners = {
       timesInBottom: 1,
     },
   },
+  sashaVelour: {
+    name: "Sasha Velour",
+    seasonWon: "S9",
+    memorableQuotes: ["Don't joke about that.", "AAAAAAAAH! *cough* HUUH."],
+    wins: {
+      maxiChallengeWins: 2,
+      miniChallengeWins: 1,
+      timesInTop: 5,
+    },
+    losses: {
+      timesPlacedLow: 1,
+      timesInBottom: 0,
+    },
+  },
+  aquaria: {
+    name: "Aquaria",
+    seasonWon: "S10",
+    memorableQuotes: [
+      "Bonjour!... Sorry to keep you waiting.",
+      "My name is Aquaria and I am a superstar!",
+    ],
+    wins: {
+      maxiChallengeWins: 3,
+      miniChallengeWins: 2,
+      timesInTop: 1,
+    },
+    losses: {
+      timesPlacedLow: 2,
+      timesInBottom: 0,
+    },
+  },
 };
 
 const youreAWinnerBaby = (winners) => {
