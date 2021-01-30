@@ -123,6 +123,7 @@ const winners = {
       timesInBottom: 1,
     },
   },
+
   sashaVelour: {
     name: "Sasha Velour",
     seasonWon: "S9",
@@ -137,21 +138,38 @@ const winners = {
       timesInBottom: 0,
     },
   },
-  aquaria: {
-    name: "Aquaria",
-    seasonWon: "S10",
+  yvieOddly: {
+    name: "Yvie Oddly",
+    seasonWon: "S11",
     memorableQuotes: [
-      "Bonjour!... Sorry to keep you waiting.",
-      "My name is Aquaria and I am a superstar!",
+      "HUEHUEHUEHUE.",
+      "I am Denver's commodity of drag oddity.",
+    ],
+    wins: {
+      maxiChallengeWins: 1,
+      miniChallengeWins: 0,
+      timesInTop: 6,
+    },
+    losses: {
+      timesPlacedLow: 1,
+      timesInBottom: 1,
+    },
+  },
+  jaidaEssenceHall: {
+    name: "Jaida Essence Hall",
+    seasonWon: "S12",
+    memorableQuotes: [
+      "Hey, bitches! She's here!",
+      "I am Denver's commodity of drag oddity.",
     ],
     wins: {
       maxiChallengeWins: 3,
-      miniChallengeWins: 2,
-      timesInTop: 1,
+      miniChallengeWins: 0,
+      timesInTop: 3,
     },
     losses: {
-      timesPlacedLow: 2,
-      timesInBottom: 0,
+      timesPlacedLow: 0,
+      timesInBottom: 1,
     },
   },
 };
@@ -173,6 +191,13 @@ const youreAWinnerBaby = (winners) => {
     finalScores.push({ queenName, totalScore });
   }
   console.log(finalScores);
+  const h1 = document.querySelector("h1");
+  const topQueen = finalScores.sort((a, b) =>
+    a.totalScore > b.totalScore ? -1 : 1
+  );
+  console.log(topQueen);
+
+  h1.innerHTML = `${topQueen[0].queenName} is the winner!`;
 };
 
 youreAWinnerBaby(winners);
