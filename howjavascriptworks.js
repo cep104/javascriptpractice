@@ -13,3 +13,8 @@ function second(x, y) {
 }
 
 const x = first();
+console.log(x);
+//once code is compiled top level code will start execution.
+//first will be global which will be put at the bottom of stack(bottom) so in this case name, first, second, and x
+//next first() would be the next to get run in call stack
+//then second is called in the execution contex and in call stack
