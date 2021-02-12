@@ -15,3 +15,4 @@ const printForecast = function (dataArray) {
 
 printForecast(dataOne);
 printForecast(dataTwo);
+printForecast(dataTwo);

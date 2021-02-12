@@ -1,3 +1,4 @@
+`use strict`;
 // const name = "Jonas";
 
 // const first = () => {
@@ -19,16 +20,35 @@
 //next first() would be the next to get run in call stack
 //then second is called in the execution contex and in call stack
 
-const myName = "Jonas";
-function first() {
-  const age = 30;
-  if (age >= 30) {
-    const decade = 3;
-    var millenial = true;
+// const myName = "Jonas";
+// function first() {
+//   const age = 30;
+//   if (age >= 30) {
+//     const decade = 3;
+//     var millenial = true;
+//   }
+//   function second() {
+//     const job = "teacher";
+//     console.log(`${myName} is a ${age}-old ${job}`);
+//   }
+//   second();
+// }
+
+function calcAge(birthYear) {
+  const age = 2037 - birthYear;
+  console.log(firstName);
+  function printAge() {
+    const output = `You are ${age}, born in ${birthYear}.`;
+    console.log(output);
+    if (birthYear >= 1981 && birthYear <= 1996) {
+      var millenial = true;
+      const string = `Oh, and you're a millenial, ${firstName}!`;
+      console.log(string);
+    }
+    console.log(millenial);
   }
-  function second() {
-    const job = "teacher";
-    console.log(`${myName} is a ${age}-old ${job}`);
-  }
-  second();
+  printAge();
+  return age;
 }
+const firstName = "Jonas";
+calcAge(1991);
